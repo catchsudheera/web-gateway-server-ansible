@@ -12,6 +12,7 @@ This repository includes a set of ansible roles and a playbook to set up web-ser
 - Password-less SSH ability to your server. (Using public key authentication)
   - `ssh-copy-id user@server.local` will enable this
 - SSH user of the server (e.g : `ubuntu`) is able to password-less `sudo` temporarily.
+  - Adding `ubuntu ALL=(ALL) NOPASSWD: ALL` in the last line of `/etc/sudoers` file will do this. (Assuming the user is `ubuntu`)
 
 # How to install
 
