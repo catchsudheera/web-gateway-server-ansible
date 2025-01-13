@@ -1,0 +1,40 @@
+---
+# GLOBAL
+gv_server_timezone: Europe/Amsterdam
+
+# USER
+ansible_user: ubuntu
+gv_local_wg_user: wg-user
+gv_local_wg_uid: 1009
+gv_local_wg_group: web-gateway-server-users
+gv_local_wg_gid: 1009
+gv_local_wg_user_home: "/home/{{ gv_local_wg_user }}"
+
+gv_docker_network_name: wg-server-network
+
+# Storage location type. Options : [local, nfs]
+gv_storage_location_type: local
+
+## LOCAL
+gv_server_data_root_local_mount_path: /mnt/server_data
+
+## NFS - uncomment and configure following for NFS
+
+#gv_nfs_server_address: <nfs-address>
+#gv_server_data_root_local_mount_path: /mnt/server_data
+#gv_server_data_remote_path: /mnt/your-remote-mount-path
+
+# COMMON
+gv_container_data_dir_name: container_data
+gv_container_data_root: "{{ gv_server_data_root_local_mount_path }}/{{ gv_container_data_dir_name | default('container_data') }}"
+
+
+# NPM
+gv_database_username: npm_user
+gv_database_password: <generated-password>
+
+
+
+
+
+
