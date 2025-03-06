@@ -43,5 +43,5 @@ services:
     restart: unless-stopped
     environment:
       API_KEY: {{ cloudflare_api_token }}
-      ZONE: {{ cloudflare_api_token }}
+      ZONE: {{ cloudflare_ddns_zone }}
       PROXIED: false
