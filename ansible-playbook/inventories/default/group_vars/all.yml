@@ -33,6 +33,9 @@ gv_container_data_root: "{{ gv_server_data_root_local_mount_path }}/{{ gv_contai
 gv_database_username: npm_user
 gv_database_password: <generated-password>
 
+# cloudflare-ddns
+gv_cloudflare_api_token: <api-dns-token>
+gv_cloudflare_ddns_zone: <zone name>
 
 
 

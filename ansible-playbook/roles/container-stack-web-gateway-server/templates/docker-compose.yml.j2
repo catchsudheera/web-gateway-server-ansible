@@ -37,3 +37,11 @@ services:
       - {{ nginx_proxy_manager_database_path }}:/var/lib/postgresql/data
 
 
+  cloudflare-ddns:
+    container_name: cloudflare-ddns
+    image: oznu/cloudflare-ddns:armhf
+    restart: unless-stopped
+    environment:
+      API_KEY: {{ cloudflare_api_token }}
+      ZONE: {{ cloudflare_api_token }}
+      PROXIED: false

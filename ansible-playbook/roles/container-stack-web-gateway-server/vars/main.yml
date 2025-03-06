@@ -21,3 +21,5 @@ nginx_proxy_manager_lets_encrypt_path: "{{ container_data_root }}/nginx_proxy_ma
 database_username: "{{ gv_database_username }}"
 database_password: "{{ gv_database_password }}"
 
+cloudflare_api_token: "{{ gv_cloudflare_api_token }}"
+cloudflare_ddns_zone: "{{ gv_cloudflare_ddns_zone }}"
