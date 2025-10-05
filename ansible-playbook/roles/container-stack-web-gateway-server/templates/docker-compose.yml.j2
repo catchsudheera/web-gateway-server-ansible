@@ -24,7 +24,8 @@ services:
 
   db:
     container_name: postgres
-    image: postgres:latest
+    image: postgres:17.5-trixie
+    user: "{{ server_data_user_uid }}:{{ server_data_group_gid }}"
     restart: unless-stopped
     environment:
       - PUID={{ server_data_user_uid }}
