@@ -37,6 +37,9 @@ gv_database_password: <generated-password>
 gv_cloudflare_api_token: <api-dns-token>
 gv_cloudflare_ddns_zone: <zone name>
 
+## Dockhand
+gv_dockhand_server_token: your_secret_token_here
+gv_dockhand_agent_name: web-gateway-server
 
 
 
